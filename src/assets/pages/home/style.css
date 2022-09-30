@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --darkGray: hsl(0, 0%, 55%);
+    --veryDarkGray: hsl(0, 0%, 41%);
+    --fontAlata: 'Alata', sans-serif;
+    --fontJosefin: 'Josefin Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    height: 200vh;
+    font-size: 1rem;
+    font-family: var(--fontAlata);
+}
+
+.bannerHeader {
+    max-width: 100%;
+    height: 35%;
+    background-image: url("../../images/desktop/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.bannerHeader h1 {
+    color: var(--white);
+    font-family: var(--fontJosefin);
+    border: 1px solid white;
+    width: 40%;
+    font-size: 4rem;
+    position: absolute;
+    bottom: 4.1rem;
+    left: 7rem;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+.navLogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 7rem;
+
+}
+
+.navLogo img {
+    width: 18%;
+    height: 10%;
+
+}
+
+main {
+    background-color: var(--white);
+}
+
+.descriptionSection {
+    width: 100%;
+    height: 30%;
+    position: relative;
+}
+
+.descriptionImg {
+    width: 65%;
+}
+
+.descriptionSection img {
+    width: 70%;
+    height: 70%;
+    margin: 7rem;
+}
+
+.descriptionText {
+    width: 40%;
+    position: absolute;
+    background-color: var(--white);
+    bottom: 0rem;
+    right: 13rem;
+    z-index: 20;
+    padding: 3rem;
+
+}
+
+.descriptionText h2{
+    font-size: 2rem;
+    font-family: var(--fontJosefin);
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.descriptionText p {
+    color: var(--darkGray);
+}
+
+.gallerySection {
+    width: 100%;
+}
+
+.galleryHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: 7rem;
+    
+}
+
+.galleryHeader h2 {
+    text-transform: uppercase;
+    font-family: var(--fontJosefin);
+    color: var(--black);
+    
+}
+
+.galleryHeader h3 {
+    font-family: var(--fontJosefin);
+    font-size: .9rem;
+    text-transform: uppercase;
+    border: 1px solid black;
+    padding: 0.5rem 2rem;
+}
+
+.galleryPictures {
+    margin: 7rem;
+    height: 45rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "g1 g2 g3 g4"
+    "g5 g6 g7 g8"
+    ;
+}
+
+.galleryEarth {
+    grid-area: g1;
+    background-image: url("../../images/desktop/image-deep-earth.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    position: relative;
+}
+
+.galleryTitle {
+    width: 45%;
+    color: var(--white);
+    font-family: var(--fontJosefin);
+    text-transform: uppercase;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    font-size: 1.2rem;
+    position: absolute;
+}
+
+
+.galleryArcade {
+    grid-area: g2;
+    background-image: url("../../images/desktop/image-night-arcade.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    position: relative;
+}
+.gallerySoccer {
+    grid-area: g3;
+    background-image: url("../../images/desktop/image-soccer-team.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+
+.galleryGrid {
+    grid-area: g4;
+    background-image: url("../../images/desktop/image-grid.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    position: relative;
+}
+
+.galleryVr {
+    grid-area: g5;
+    background-image: url("../../images/desktop/image-from-above.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    position: relative;
+}
+
+.galleryBorealis {
+    grid-area: g6;
+    background-image: url("../../images/desktop/image-pocket-borealis.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    position: relative;
+}
+
+.galleryCuriosity {
+    grid-area: g7;
+    background-image: url("../../images/desktop/image-curiosity.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    position: relative;
+}
+
+.galleryFisheye {
+    grid-area: g8;
+    background-image: url("../../images/desktop/image-fisheye.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+footer {
+    background-color: var(--black);
+    height: 15%;
+    width: 100%;
+    padding-right: 0;
+    display: flex;
+}
+
+.footerLeftSide {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 4rem;
+    padding-left: 3rem;
+
+}
+
+.footerLeftSide img{
+    width: 30%;
+    height: 15%;
+    
+}
+
+.footerRightSide {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 1rem;
+    padding-right: 7rem;
+
+}
+
+.socialIcons img{
+    padding-left: .5rem ;
+}
+
+.footerRightSide p {
+    color: var(--darkGray);
+}
+
+
+
+@media (max-width: 768px) {
+    .bannerHeader h1 {
+        width: 70%;
+    }
+    .descriptionSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .descriptionSection {
+        width: 100%;
+    
+    }
+    .descriptionText {
+        position: relative;
+        width: 60%;
+        right: auto;
+        text-align: center;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+}

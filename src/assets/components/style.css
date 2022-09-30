@@ -1,0 +1,28 @@
+
+.menuNav {
+    display: flex;
+    max-width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    height: 7rem;
+    padding-right: 2rem;
+}
+
+
+.menuNav ul{
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+}
+
+.menuNav a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.3rem;
+    
+}
+
+.menuNav a:hover {
+    border-bottom: 1px solid white;
+}
+
